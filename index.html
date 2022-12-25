@@ -1,40 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
-    <script src="./script.js" defer ></script>
-    <title>Calculator</title>
-</head>
-<body>
-    <div class="container">
-        <div class="display">
-            <div id="memory"></div>
-            <div id="current"></div>
+    <head>
+        <meta charset="UTF-8">
+        
+        <link href="https://fonts.googleapis.com/css2?family=League+Spartan" rel="stylesheet">
+        <link rel="stylesheet" href="./styles.css">
+        <script src="./script.js" defer></script>
+        <title>Calculator</title>
+    </head>
+
+    <body class="theme-strong">
+        <div id="calc-body">
+            <div id="setting">
+                <div class="theme-container">
+                    <div class="theme-text">THEME</div>
+                    <div class="tri-state-toggle">
+                        <ul>
+                            <li>1</li>
+                            <li>2</li>
+                            <li>3</li>
+                        </ul>
+                        <input id="theme-toggle" type="range" min="1" step="1" max="3"/>
+                    </div>
+                </div>
+            </div>
+            <div id="display">
+                <div id="display-operand"></div>
+                <div id="display-numbers"></div>
+            </div>
+            <div id="key-container">
+                <div class="key number" value="7">7</div>
+                <div class="key number" value="8">8</div>
+                <div class="key number" value="9">9</div>
+                <div class="key" id="del">DEL</div>
+                <div class="key number" value="4">4</div>
+                <div class="key number" value="5">5</div>
+                <div class="key number" value="6">6</div>
+                <div class="key operand" value="+">+</div>
+                <div class="key number" value="1">1</div>
+                <div class="key number" value="2">2</div>
+                <div class="key number" value="3">3</div>
+                <div class="key operand" value="-">-</div>
+                <div class="key" id="dot">.</div>
+                <div class="key number" value="0">0</div>
+                <div class="key operand" value="/">/</div>
+                <div class="key operand" value="x">x</div>
+                <div class="key" id="reset">RESET</div>
+                <div class="key" id="equal">=</div>
+            </div>
         </div>
-        <div class="keys">
-            <button class="key clear" id="allClear" value="ac">AC</button>
-            <button class="key clear" id="clear" value="c">C</button>
-            <button class="key operand" id="modulus" value="%">%</button>
-            <button class="key operand" id="divide" value="/">/</button>
-            <button class="key number" id="seven" value="7">7</button>
-            <button class="key number" id="eight" value="8">8</button>
-            <button class="key number" id="nine" value="9">9</button>
-            <button class="key operand" id="multiply" value="x">x</button>
-            <button class="key number" id="four" value="4">4</button>
-            <button class="key number" id="five" value="5">5</button>
-            <button class="key number" id="six" value="6">6</button>
-            <button class="key operand" id="subtract" value="-">-</button>
-            <button class="key number" id="one" value="1">1</button>
-            <button class="key number" id="two" value="2">2</button>
-            <button class="key number" id="three" value="3">3</button>
-            <button class="key operand" id="add" value="+">+</button>
-            <button class="key number" id="zero" value="0">0</button>
-            <button class="key" id="decimal" value=".">.</button>
-            <button class="key operand" id="equals" value="=">=</button>
-        </div>
-    </div>
-</body>
+        
+    </body>
 </html>
